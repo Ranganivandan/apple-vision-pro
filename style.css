@@ -106,7 +106,7 @@ justify-content: center;
 
 .vid1 video{
   width: 75%;
-  height: 90%;
+  height: 100%;
   object-fit: cover;
   /* position: absolute; */
 object-position: center;
@@ -150,7 +150,7 @@ flex-direction: column;
     align-items: center;
     border-radius: 100px;
     cursor: pointer;
-    z-index: 9;
+ z-index: 200;
  
 }
 
@@ -158,6 +158,7 @@ flex-direction: column;
     filter: invert(1);
     width: 5vw;
     height: 5vh;
+    /* position: relative; */
 }
 
 .displaychat {
@@ -165,13 +166,14 @@ flex-direction: column;
     height: 65vh;
     background-color: rgb(255, 255, 255);
     position: fixed;
+    z-index: 200;
     top: 23%;
     right: 2%;
     border-radius: 20px;
     display: flex;
     transition: all 0.5 ease-in;
     flex-direction: column;
-    
+   
 }
 
 .heading{
@@ -449,6 +451,7 @@ margin-top: 200px;
     width: 100%;
     height: 100vh;
     object-fit: cover;
+    z-index: 10;
 }
 #page3 div{
     position: absolute;
@@ -743,7 +746,7 @@ width: 100%;
     width: 100%;
     height: 100vh;
     background-color: #f5f5f7;
-    
+
 }
 
 
