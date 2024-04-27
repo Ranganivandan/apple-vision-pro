@@ -454,10 +454,13 @@ margin-top: 200px;
     z-index: 10;
 }
 #page3 div{
-    position: absolute;
-    width: 50%;
-    text-align: center;
+position: absolute;
+    /* align-items: center;  */
+    white-space: nowrap;
+    color: white;
+    /* text-align: center; */
     margin-top: 200px;
+    z-index: 100;
 }
 
 
