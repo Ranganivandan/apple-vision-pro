@@ -43,6 +43,14 @@ function append() {
 
 document.getElementById("send").addEventListener("click", append);
 
+document.getElementById("inputs").addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    // event.preventDefault();
+    document.getElementById("send").click();
+    console.log(event);
+  }
+});
+
 function popup() {
   console.log("popup");
   document.querySelector(".popup").classList.remove("hide");
