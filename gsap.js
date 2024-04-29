@@ -117,3 +117,17 @@ var tl5 = gsap.timeline({
 tl5.to("#page12>div", {
   top: "-50%",
 });
+
+var tl6 = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#page16",
+    start: `top top`,
+    scrub: 1,
+    scroller: `body`,
+    // markers: true,
+    pin: true,
+  },
+});
+tl6.to("#page16>div", {
+  top: "-50%",
+});

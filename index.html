@@ -14,28 +14,24 @@
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="main">
-
-<div class="page">
+      <!-- <div class="page">
 <h1>0%</h1>
 <p><span>Apple</span> <span>Vision</span> <span>Pro</span></p>
-</div>
+</div> -->
 
-
-<div id="page1">
-
-
-<nav>
-    <div class="nav1">
-
-         <img
+      <div id="page1">
+        <nav>
+          <div class="nav1">
+            <img
               id="logo"
               src="https://www.apple.com/ac/globalfooter/8/en_US/assets/ac-footer/breadcrumbs/apple/icon_large.svg"
               alt="logo"
@@ -57,333 +53,467 @@
               <img src="/images/search-interface-symbol.png" />
               <img src="/images/bag.png" />
             </div>
+          </div>
 
-    </div>
+          <div class="nav2">
+            <div id="left"><h1 style="color: white">Apple vision Pro</h1></div>
+            <div id="right">
+              <button
+                type="button"
+                style="
+                  background-color: rgb(41, 83, 251);
+                  color: white;
+                  width: 3vw;
+                  height: 4vh;
+                  border-radius: 50px;
+                  margin: 2px;
+                  border: none;
+                "
+              >
+                Buy
+              </button>
+              <button
+                onclick="popup()"
+                type="button"
+                style="
+                  background-color: black;
+                  color: white;
+                  width: 5vw;
+                  height: 4vh;
+                  border-radius: 50px;
+                  margin: 2px;
+                  border: 1px solid white;
+                "
+              >
+                Notify me
+              </button>
+            </div>
+          </div>
+        </nav>
 
-
-     <div class="nav2">
-         <div id="left"><h1 style="color: white">Apple vision Pro</h1></div>
-          <div id="right">
-               <button
-                 type="button"
-                 style="
-                   background-color: rgb(41, 83, 251);
-                   color: white;
-                   width: 3vw;
-                   height: 4vh;
-                   border-radius: 50px;
-                   margin: 2px;
-                   border: none;
-                 "
-               >
-                 Buy
-               </button>
-               <button  onclick="popup()"
-                 type="button"
-                 style="
-                   background-color: black;
-                   color: white;
-                   width: 5vw;
-                   height: 4vh;
-                   border-radius: 50px;
-                   margin: 2px;
-                   border: 1px solid white;
-                 "
-               >
-                 Notify me
-               </button>
-               </div>
-     </div>
-
-  </nav>
-
-<div class="vid1">
-
-   <video
-          id="vids"  src="https://www.apple.com/105/media/us/apple-vision-pro/2024/6e1432b2-fe09-4113-a1af-f20987bcfeee/anim/hero/medium_2x.mp4"
+        <div class="vid1">
+          <video
+            id="vids"
+            src="https://www.apple.com/105/media/us/apple-vision-pro/2024/6e1432b2-fe09-4113-a1af-f20987bcfeee/anim/hero/medium_2x.mp4"
             muted
           ></video>
 
-
-
-<div class="popup hide">
-  <div>
-    <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/apple_logo_icon_168588.png">
-  </div>
- <div style="margin: px;"> <h2> Stay Up-to-Date with Apple Vision Pro Updates!</h2>
-  <p>We're excited to announce that we've rolled out a new update for Apple Vision Pro, bringing you enhanced features and improvements to elevate your experience even further!</p>
-</div>
-  <div>
-<input type="email"  id="email"  placeholder="Enter your email" required >
-</div>
-<div style="gap: 20px; margin: 15px;">
-<button type="button" class="send1" onclick="send()" >Send</button>
-<button type="button" class="notnow" onclick="notnow()">Not now</button>
-</div>
-</div>
-
-
-<div class="message hide">
-            
-<div id="imgmessage">
-<img src="/images/accept.png" alt="accept">
-</div>
-<div id="contentmessage">
-  <p style="color: rgb(36, 36, 36);">Email has been sended succesfully!</p>
-</div>
- <div id="closedcontent">
-  <img src="/images/close.png" alt="cross">
-</div> 
-
-</div>
-
-
-
-<div class="internetconnection">
-  <h1>No Internet Connection</h1>
-  <p>No Internet Connection.Make sure that WI-FI or mobile-data is turned on,then try again</p>
-<button type="button" onclick="reconnect()">Reconect now</button>
-</div>
-
-
-
-
-
-
-
-
-</div>
-
-
-
-
-<div class="contentimg">
-     <h2>Introducing</h2>
- <img
-           src="https://www.apple.com/v/apple-vision-pro/c/images/overview/hero/apple_vision_pro_logo_base__ff62ypdqteie_large_2x.png"
-              alt="bottom"
-            />
-</div>
-
-   <div class="displaychat hide">
-            <div class="heading">
-              <h1>Apple</h1>
-              <p>Type Hi to Start the conversation</p>
+          <div class="popup hide">
+            <div>
+              <img
+                src="https://cdn.icon-icons.com/icons2/2699/PNG/512/apple_logo_icon_168588.png"
+              />
             </div>
-            <div class="chat">
+            <div style="margin: px">
+              <h2>Stay Up-to-Date with Apple Vision Pro Updates!</h2>
+              <p>
+                We're excited to announce that we've rolled out a new update for
+                Apple Vision Pro, bringing you enhanced features and
+                improvements to elevate your experience even further!
+              </p>
+            </div>
+            <div>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div style="gap: 20px; margin: 15px">
+              <button type="button" class="send1" onclick="send()">Send</button>
+              <button type="button" class="notnow" onclick="notnow()">
+                Not now
+              </button>
+            </div>
+          </div>
 
-<ul style="list-style: none;" class="unorderlist">
-                <li class="chat-incoming">
-                  <span><i class="fa-solid fa-robot"></i></span>
-    <p>hello</p>
-    <p>Here's what I can help you with.
-    </p>
-                </li>
-                <!-- <li class="chat-outgoing">
+          <div class="message hide">
+            <div id="imgmessage">
+              <img src="/images/accept.png" alt="accept" />
+            </div>
+            <div id="contentmessage">
+              <p style="color: rgb(36, 36, 36)">
+                Email has been sended succesfully!
+              </p>
+            </div>
+            <div id="closedcontent">
+              <img src="/images/close.png" alt="cross" />
+            </div>
+          </div>
+
+          <div class="internetconnection">
+            <h1>No Internet Connection</h1>
+            <p>
+              No Internet Connection.Make sure that WI-FI or mobile-data is
+              turned on,then try again
+            </p>
+            <button type="button" onclick="reconnect()">Reconect now</button>
+          </div>
+        </div>
+
+        <div class="contentimg">
+          <h2>Introducing</h2>
+          <img
+            src="https://www.apple.com/v/apple-vision-pro/c/images/overview/hero/apple_vision_pro_logo_base__ff62ypdqteie_large_2x.png"
+            alt="bottom"
+          />
+        </div>
+
+        <div class="displaychat hide">
+          <div class="heading">
+            <h1>Apple</h1>
+            <p>Type Hi to Start the conversation</p>
+          </div>
+          <div class="chat">
+            <ul style="list-style: none" class="unorderlist">
+              <li class="chat-incoming">
+                <span><i class="fa-solid fa-robot"></i></span>
+                <p>hello</p>
+                <p>Here's what I can help you with.</p>
+              </li>
+              <!-- <li class="chat-outgoing">
                   <p>hello.which apple product is best</p>
                 </li> -->
 
-<!-- <li class="chat-incoming">
+              <!-- <li class="chat-incoming">
                   <span><i class="fa-solid fa-robot"></i></span>
     <p>Hello there! I'm here to help you. Please select from the below options or type your query.</p>
     <p>Here's what I can help you with.
     </p>
                 </li> -->
 
-  <!-- <li class="chat-outgoing">
+              <!-- <li class="chat-outgoing">
                   <p>hello</p>
                 </li> -->
-                <!-- <li class="chat-incoming">
+              <!-- <li class="chat-incoming">
                   <span><i class="fa-solid fa-robot"></i></span>
     <p>Hello there! I'm here to help you. Please select from the below options or type your query.</p>
     <p>Here's what I can help you with.
     </p>
                 </li> -->
 
-
-                <!-- <li class="chat-incoming">
+              <!-- <li class="chat-incoming">
                   <span><i class="fa-solid fa-robot"></i></span>
     <p>Hello there! I'm here to help you. Please select from the below options or type your query.</p>
     <p>Here's what I can help you with.
     </p>
                 </li> -->
+            </ul>
+          </div>
 
-              </ul>
-              
-            </div>
-
-
-<div class="inputbox">
-
-                <input type="text" id="inputs" placeholder="Type a message"/>
-               <button style="background-color: transparent;border: none;" id="mybtn"><img src="/images/send.png" alt="send" id="send"></button> 
+          <div class="inputbox">
+            <input type="text" id="inputs" placeholder="Type a message" />
+            <button
+              style="background-color: transparent; border: none"
+              id="mybtn"
+            >
+              <img src="/images/send.png" alt="send" id="send" />
+            </button>
+          </div>
         </div>
+        <div>
+          <div class="chatbot">
+            <img
+              class="apples"
+              src="https://www.apple.com/ac/globalfooter/8/en_US/assets/ac-footer/breadcrumbs/apple/icon_large.svg"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="page2">
+        <div><h1>Welcome to the era of spatial computing.</h1></div>
 
+        <video
+          loop
+          src="https://www.apple.com/105/media/us/apple-vision-pro/2024/6e1432b2-fe09-4113-a1af-f20987bcfeee/anim/foundation-spatial-computing/large.mp4"
+          muted
+          autoplay
+        ></video>
+      </div>
+      <div id="page3">
+        <div>
+          <h1 style="font-size: 40px; color: white">
+            You navigate simply by using your eyes, hands, and voice.
+          </h1>
+        </div>
+        <video
+          loop
+          src="https://www.apple.com/105/media/us/apple-vision-pro/2024/6e1432b2-fe09-4113-a1af-f20987bcfeee/anim/foundation-entertainment/large.mp4"
+          muted
+          autoplay
+        ></video>
+      </div>
+
+      <div id="page4">
+        <div>
+          <img
+            src="https://www.apple.com/v/apple-vision-pro/c/images/overview/hero/apple_vision_pro_logo__ux94yix23r6y_large.png"
+          />
+          <h2 style="margin-top: 60px" class="flim">Watch The Film</h2>
+          <h2 style="margin-top: 20px" class="watch">Watch The Guided Tour</h2>
+        </div>
+      </div>
+      <div id="page5">
+        <img
+          src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTA8yg-HAqKDg_rswkmU_i_xTkYI9HJdvtJiPyIhsBglndtAA1G17VzddIVjhYQusGOL-XWoxJ-PhG-63fHOGbZmLDyqjLI"
+        />
+        <button type="button">+ Take A Closer Look</button>
+      </div>
+      <div id="page6">
+        <div>
+          <h1>Free your desktop. And your apps will follow.</h1>
+        </div>
+        <video
+          src="https://www.apple.com/105/media/us/apple-vision-pro/2024/6e1432b2-fe09-4113-a1af-f20987bcfeee/anim/experience-apps/medium.mp4"
+          muted
+          autoplay
+          loop
+        ></video>
+      </div>
+      <div id="page7">
+        <div class="left7">
+          <h1>Your apps live in your space.</h1>
+        </div>
+        <div class="right7">
+          <p>
+            With Apple Vision Pro, you have an infinite canvas that transforms
+            how you use the apps you love. Arrange apps anywhere and scale them
+            to the perfect size, making the workspace of your dreams a reality —
+            all while staying present in the world around you. Browse the web in
+            Safari, create a to‑do list in Notes, chat in Messages, and
+            seamlessly move between them with a glance. You can even bring your
+            Mac workflows into Apple Vision Pro wirelessly with Mac Virtual
+            Display.
+          </p>
+          <button type="button">+ Learn More About Apps</button>
+        </div>
+      </div>
+      <div id="page8">
+        <div>
+          <h5>Entertainment</h5>
+          <h1>The ultimate theater. Wherever you are.</h1>
+        </div>
+        <video
+          src="https://www.apple.com/105/media/us/apple-vision-pro/2024/6e1432b2-fe09-4113-a1af-f20987bcfeee/anim/experience-entertainment/medium.mp4"
+          muted
+          autoplay
+          loop
+        ></video>
+      </div>
+
+      <div id="page9">
+        <div class="left7">
+          <h1>A new dimension for entertainment.</h1>
+        </div>
+        <div class="right7">
+          <p>
+            Apple Vision Pro can transform any room into your own personal
+            theater. Expand your movies, shows, and games to your perfect size
+            and experience them in Spatial Audio. Apple Immersive Video puts you
+            in the center of the action with mind‑blowing immersion. And with
+            more pixels than a 4K TV for each eye, you can enjoy stunning
+            content wherever you are — on a long flight or the couch at home.
+          </p>
+          <button type="button">+ Learn More About Apps</button>
+        </div>
+      </div>
+
+      <div id="page10">
+        <div>
+          <h1>Be in the moment. All over again.</h1>
+        </div>
+        <video
+          muted
+          autoplay
+          loop
+          src="https://www.apple.com/105/media/us/apple-vision-pro/2024/6e1432b2-fe09-4113-a1af-f20987bcfeee/anim/experience-photos-videos/medium.mp4"
+        ></video>
+      </div>
+      <div id="page11">
+        <div class="left7">
+          <h1>A new dimension for entertainment.</h1>
+        </div>
+        <div class="right7">
+          <p>
+            Apple Vision Pro can transform any room into your own personal
+            theater. Expand your movies, shows, and games to your perfect size
+            and experience them in Spatial Audio. Apple Immersive Video puts you
+            in the center of the action with mind‑blowing immersion. And with
+            more pixels than a 4K TV for each eye, you can enjoy stunning
+            content wherever you are — on a long flight or the couch at home.
+          </p>
+          <button type="button">+ Learn More About Apps</button>
+        </div>
+      </div>
+      <div id="page12">
+        <div><h1>Be in the moment. All over again.</h1></div>
+        <video
+          muted
+          autoplay
+          loop
+          src="https://www.apple.com/105/media/us/apple-vision-pro/2024/6e1432b2-fe09-4113-a1af-f20987bcfeee/anim/experience-connection/medium.mp4"
+        ></video>
+      </div>
+      <div id="page13">
+        <div class="page13in">
+          <h4>Design</h4>
+          <h1>Designed by Apple.</h1>
+          <p>
+            Apple Vision Pro is the result of decades of experience designing
+            high‑performance, mobile, and wearable devices — culminating in the
+            most ambitious product Apple has ever created. Apple Vision Pro
+            integrates incredibly advanced technology into an elegant, compact
+            form, resulting in an amazing experience every time you put it on.
+          </p>
+        </div>
+      </div>
+      <div id="page14">
+        <div style="margin: 50px">
+          <div>
+            <img
+              src="https://www.apple.com/v/apple-vision-pro/c/images/overview/design/glass_top__k3b8lzqd1l2m_medium.jpg"
+            />
           </div>
           <div>
+            <img
+              src="https://www.apple.com/v/apple-vision-pro/c/images/overview/design/glass_side__gm4agomrwl2e_medium.jpg"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="page15">
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <div
+            style="
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              height: 30%;
+            "
+          >
+            <h1>
+              A singular piece of
+              <span> three-dimensionally formed laminated glass</span> acts as
+              an optical surface for the cameras and sensors that view the
+              world. It flows seamlessly into a
+              <span>custom aluminum alloy frame</span> that gently curves to
+              wrap around your face while serving as an attachment point for the
+              <span>light Seal.</span>
+            </h1>
+          </div>
+          <div style="width: 56%; height: 70%">
+            <img
+              src="https://www.apple.com/v/apple-vision-pro/c/images/overview/design/light_seal__fo87cv0zkcmm_medium.jpg"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="page16">
+        <div>
+          <h5>visionOS</h5>
+          <h1>Apple’s first spatial operating system.</h1>
+        </div>
+        <video
+          muted
+          autoplay
+          loop
+          src="https://www.apple.com/105/media/us/apple-vision-pro/2024/6e1432b2-fe09-4113-a1af-f20987bcfeee/anim/visionos/medium.mp4"
+        ></video>
+      </div>
+      <div id="page17">
+        <div class="left7">
+          <h1>Interaction designed for spatial computing.</h1>
+        </div>
+        <div class="right7">
+          <p>
+            Built on the foundation of macOS, iOS, and iPadOS, visionOS enables
+            powerful spatial experiences. Control Apple Vision Pro with your
+            eyes, hands, and voice — interactions feel intuitive and magical.
+            Simply look at an element, tap your fingers together to select, and
+            use the virtual keyboard or dictation to type.
+          </p>
+          <button type="button">+ Learn More About Apps</button>
+        </div>
+      </div>
+    </div>
+    <div id="page19">
+      <div>
+        <img
+          src="https://www.apple.com/v/apple-vision-pro/c/images/overview/visionos/around_you__bfdlxkwczahe_large.jpg"
+        />
+      </div>
+    </div>
+    <div id="page20">
+      <div class="left7">
+        <h1>Stay connected to people around you.</h1>
+      </div>
+      <div class="right7">
+        <p style="font-weight: 500; font-size: 20px">
+          Apple Vision Pro helps you remain connected to those around you.
+          EyeSight reveals your eyes and lets those nearby know when you’re
+          using apps or fully immersed in an experience. When someone
+          approaches, Apple Vision Pro simultaneously lets you see the person
+          and reveals your eyes to them.
+        </p>
+        <button type="button">+ Learn More About Apps</button>
+      </div>
+    </div>
+    <div id="page21">
+      <div class="page13in">
+        <h4 style="font-size: 25px">Privacy and Security</h4>
+        <h1>When it comes to privacy, we don’t blink.</h1>
+        <p style="font-weight: 800; font-size: 25px">
+          <span style="color: black"> Privacy and security built in.</span> Like
+          every Apple product and service, Apple Vision Pro was designed to help
+          protect your privacy and keep you in control of your data. It builds
+          on the foundation of existing Apple privacy and security features with
+          new technologies like Optic ID, a secure authentication system that
+          uses the uniqueness of your iris.
+        </p>
+      </div>
+    </div>
+    <div id="page22">
+      <div class="page13in">
+        <img
+          src="https://www.apple.com/v/apple-vision-pro/c/images/overview/routers/developers__bxrd1uafspsi_large.png"
+        />
+        <h1>An all‑new platform. An all‑new world for developers.</h1>
+        <p style="font-weight: 500; font-size: 25px">
+          The possibilities for what developers can dream up and build for Apple
+          Vision Pro are endless. And with familiar tools and frameworks like
+          Xcode, SwiftUI, RealityKit, and ARKit, as well as support for Unity
+          and the new 3D-content preparation app Reality Composer Pro,
+          developers have everything they need to create amazing spatial
+          experiences.
+        </p>
+      </div>
+    </div>
 
-<div class="chatbot" >
-   <img   
-          class="apples"         src="https://www.apple.com/ac/globalfooter/8/en_US/assets/ac-footer/breadcrumbs/apple/icon_large.svg"
-              />
-</div>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "WHy1YRp-JDebuVHDH",
+        });
+      })();
+    </script>
 
-
-</div>
-
-
-
-
-
-</div>
-<div id="page2">
-  <div><h1>Welcome to the era of spatial computing.</h1></div>
-
-  <video loop src="https://www.apple.com/105/media/us/apple-vision-pro/2024/6e1432b2-fe09-4113-a1af-f20987bcfeee/anim/foundation-spatial-computing/large.mp4" muted autoplay></video>
-</div>
-<div id="page3">
-
-<div>
-  <h1 style="  font-size: 40px; color: white;">You navigate simply by using your eyes, hands, and voice.</h1>
-</div>
-<video loop src="https://www.apple.com/105/media/us/apple-vision-pro/2024/6e1432b2-fe09-4113-a1af-f20987bcfeee/anim/foundation-entertainment/large.mp4" muted autoplay></video>
-
-</div>
-
-
-
-<div id="page4">
-
-<div>
-<img src="https://www.apple.com/v/apple-vision-pro/c/images/overview/hero/apple_vision_pro_logo__ux94yix23r6y_large.png">
-<h2 style="margin-top: 60px;" class="flim">Watch The Film</h2>
-<h2 style="margin-top: 20px;" class="watch">Watch The Guided Tour</h2>
-</div>
-
-
-</div>
-<div id="page5">
-
-<img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTA8yg-HAqKDg_rswkmU_i_xTkYI9HJdvtJiPyIhsBglndtAA1G17VzddIVjhYQusGOL-XWoxJ-PhG-63fHOGbZmLDyqjLI">
-<button type="button">+ Take A Closer Look</button>
-
-</div>
-<div id="page6">
-
-
-<div>
-  <h1>Free your desktop.
-And your apps will follow.
-
-
-</h1>
-</div>
-<video src="https://www.apple.com/105/media/us/apple-vision-pro/2024/6e1432b2-fe09-4113-a1af-f20987bcfeee/anim/experience-apps/medium.mp4" muted autoplay loop></video>
-
-</div>
-<div id="page7">
-<div class="left7">
-  <h1>Your apps live in your space.</h1>
-</div>
-<div class="right7">
-  <p>With Apple Vision Pro, you have an infinite canvas that transforms how you use the apps you love. Arrange apps anywhere and scale them to the perfect size, making the workspace of your dreams a reality — all while staying present in the world around you. Browse the web in Safari, create a to‑do list in Notes, chat in Messages, and seamlessly move between them with a glance. You can even bring your Mac workflows into Apple Vision Pro wirelessly with Mac Virtual Display.</p>
-  <button type="button">+ Learn More About Apps</button>
-</div>
-
-
-</div>
-<div id="page8">
-  <div>
-<h5>Entertainment</h5>
-<h1>The ultimate theater.
-Wherever you are.</h1>
-</div>
-<video src="https://www.apple.com/105/media/us/apple-vision-pro/2024/6e1432b2-fe09-4113-a1af-f20987bcfeee/anim/experience-entertainment/medium.mp4" muted autoplay loop></video>
-
-</div>
-
-<div id="page9">
-<div class="left7">
-  <h1>A new dimension for entertainment.</h1>
-</div>
-<div class="right7">
-  <p>Apple Vision Pro can transform any room into your own personal theater. Expand your movies, shows, and games to your perfect size and experience them in Spatial Audio. Apple Immersive Video puts you in the center of the action with mind‑blowing immersion. And with more pixels than a 4K TV for each eye, you can enjoy stunning content wherever you are — on a long flight or the couch at home.</p>
-  <button type="button">+ Learn More About Apps</button>
-</div>
-
-
-</div>
-
-
-<div id="page10">
-
-<div>
-  <h1>Be in the moment.
-All over again.</h1>
-</div>
-<video muted autoplay loop src="https://www.apple.com/105/media/us/apple-vision-pro/2024/6e1432b2-fe09-4113-a1af-f20987bcfeee/anim/experience-photos-videos/medium.mp4"></video>
-</div>
-<div id="page11">
-
-<div class="left7">
-  <h1>A new dimension for entertainment.</h1>
-</div>
-<div class="right7">
-  <p>Apple Vision Pro can transform any room into your own personal theater. Expand your movies, shows, and games to your perfect size and experience them in Spatial Audio. Apple Immersive Video puts you in the center of the action with mind‑blowing immersion. And with more pixels than a 4K TV for each eye, you can enjoy stunning content wherever you are — on a long flight or the couch at home.</p>
-  <button type="button">+ Learn More About Apps</button>
-</div>
-
-
-
-</div>
-<div id="page12">
-
-<div><h1>Be in the moment.
-All over again.</h1></div>
-<video muted autoplay loop src="https://www.apple.com/105/media/us/apple-vision-pro/2024/6e1432b2-fe09-4113-a1af-f20987bcfeee/anim/experience-connection/medium.mp4"></video>
-
-</div>
-<div id="page13">
-  <div class="page13in">
-<h4>Design</h4>
-<h1>Designed by Apple.</h1>
-<p>Apple Vision Pro is the result of decades of experience designing high‑performance, mobile, and wearable devices — culminating in the most ambitious product Apple has ever created. Apple Vision Pro integrates incredibly advanced technology into an elegant, compact form, resulting in an amazing experience every time you put it on.</p>
-</div>
-
-
-</div>
-<div id="page14"></div>
-<div id="page15"></div>
-<div id="page16"></div>
-<div id="page17"></div>
-<div id="page18"></div>
-<div id="page19"></div>
-<div id="page20"></div>
-<div id="page21"></div>
-<div id="page22"></div>
-
-
-
-
-
-
-
-
-
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-(function(){
-  emailjs.init({
-    publicKey: "WHy1YRp-JDebuVHDH",
-  });
-})();
-</script>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-<script src="https://kit.fontawesome.com/845f8f1972.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script
+      src="https://kit.fontawesome.com/845f8f1972.js"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
