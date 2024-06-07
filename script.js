@@ -4,7 +4,7 @@ function toggle() {
   if (count == 0) {
     document.querySelector(".displaychat").classList.remove("hide");
     console.log("open");
-    document.querySelector(".apples").src = "/images/close.png";
+    document.querySelector(".apples").src = "close.png";
     gsap.from(".displaychat", {
       opacity: 1,
       duration: 0.5,
