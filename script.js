@@ -4,7 +4,7 @@ function toggle() {
   if (count == 0) {
     document.querySelector(".displaychat").classList.remove("hide");
     console.log("open");
-    document.querySelector(".apples").src = "/images/close.png";
+    document.querySelector(".apples").src = "close.png";
     gsap.from(".displaychat", {
       opacity: 1,
       duration: 0.5,
@@ -34,7 +34,7 @@ function append() {
   console.log(inputvalue);
   let createli = document.createElement("li");
   let createpara = document.createElement("p");
-  createpara.innerHTML = inputvalue;
+  createpara.textContent = inputvalue;
   createli.classList.add("chat-outgoing");
   createli.appendChild(createpara);
   unorderdlist.appendChild(createli);
@@ -45,7 +45,6 @@ document.getElementById("send").addEventListener("click", append);
 
 document.getElementById("inputs").addEventListener("keypress", (event) => {
   if (event.key === "Enter") {
-    // event.preventDefault();
     document.getElementById("send").click();
     console.log(event);
   }
